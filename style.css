@@ -1,0 +1,380 @@
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #F3F5FC;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.container-izquierdo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container-alura {
+    display: flex;
+    justify-content: center;
+    height: 48px;
+    width: 120px;
+    margin: 40px;
+}
+
+.container-texto {
+    display: flex;
+    flex: 1 1 auto;
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.texto {
+    background-color: #F3F5FC;
+    color: #0A3871;
+    border: none;
+    line-height: 48px;
+    font-size: 32px;
+    max-width: 680px;
+    width: 100%;
+    height: auto;
+    resize: none;
+}
+
+.texto::placeholder {
+    color: #0A3871;
+}
+
+.texto:focus{
+    outline: none;
+}
+
+.container-alura img{
+    width: 100%;
+    height: 100%;
+}
+
+.container-botones {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    margin-bottom: 10%;
+    width: auto;
+}
+
+.container-botones, .container-texto {
+    margin-left: 25%;
+}
+
+
+.advertencia {
+    display: flex;
+    justify-content: space-around;
+    width: 229px;
+    height: 18px;
+    color: #495057;
+    line-height: 18px;
+    margin-bottom: 2%;
+}
+
+.advertencia p{
+    opacity: 80%;
+    max-width: 205px;
+    width: 100%;
+    gap: 8px;
+    font-size: 12px;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    max-width: 680px;
+    width: 100%;
+    height: 67px;
+}
+
+.boton {
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    padding: 24px;
+    gap: 8px;
+    font-size: 16px;
+    line-height: 19.36px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+#encriptar {
+    background-color: #0A3871;
+    border: none;
+}
+
+#desencriptar {
+    background-color: #F3F5FC;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+}
+
+.container-derecho {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container-resultado {
+    display: flex;
+    justify-content: center;
+    flex: 1 1 auto;
+    align-items: center;
+    background-color: #FFFFFF;
+    width: 400px;
+    height: 944px;
+    margin: 40px;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08)
+}
+
+#nulll {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+.texto-null {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    width: 336px;
+    height: 122px;
+    margin: 5%;
+}
+
+.texto-null h2 {
+    width: 100%;
+    height: 58px;
+    font-size: 24px;
+    line-height: 28.8px;
+    text-align: center;
+    color: #343A40;
+}
+
+.texto-null p {
+    width: 100%;
+    height: 48px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;  
+    color: #495057
+}
+
+#nulll img {
+    height: 304px;
+    width: 336px;
+}
+
+#resultado {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 1% 1%;
+}
+
+.texto-resultado{
+ width: 336px;
+ height: 781px;
+ font-size: 24px;
+ line-height: 36px;
+ overflow-wrap: break-word;
+ overflow: auto;
+ text-align: start;
+ color: #495057;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #0e54aa;
+}
+
+#copiar {
+    background-color: #FFFFFF;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+}
+
+@media only screen and (max-width: 1326px) {
+    .container-botones, .container-texto {
+     margin-left: 5%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh; /* Cambiamos 100% por 100vh para ocupar toda la altura de la pantalla */
+        margin: 4%;
+    }
+    .container-izquierdo {
+        justify-content: center;
+        height: 100%; /* Cambiamos 100% por 100% para ocupar toda la altura del contenedor padre */
+        margin: 0%; 
+    }
+
+    .container-alura {
+     margin: 0%;
+     width: 31px;
+     height: 50px;
+     overflow: hidden; 
+     margin: 4% 0 8%;
+    }
+
+    .container-alura img {
+        object-fit: cover;
+    }
+    
+    .container-derecho {
+        justify-content: center;
+        margin-top: 8%;
+    }
+    .container-texto, .container-botones {
+        margin: 0%;
+    }
+
+    .texto {
+        max-width: none;
+    }
+
+    .container-botones {
+        margin-top: 4%;
+    }
+
+    .botones {
+        display: flex;
+        width: 100%;
+        max-width: none;
+        justify-content: space-between;
+    }
+
+    .boton {
+        max-width: none;
+        width: 100%;
+    }
+
+    .container-resultado {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        margin: 0%;
+    }
+
+    #resultado {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        margin: 0%;
+        padding: 32px;
+        gap: 32px;
+        justify-content: center;
+    }
+
+    .texto-resultado {
+       height: 180px;
+       width: 90%;
+       margin: 2%;
+    }
+
+    .texto-null {
+        width: 100%;
+        height: 100%;
+        margin: 4%;
+        justify-content: none;
+        gap: 16px;
+    }
+
+    .texto-null p {
+        height: 100%;
+    }
+
+    .texto-null h2 {
+        height: 100%;
+    }
+    
+
+    #copiar {
+        width: 90%;
+    }
+
+    #imgnull {
+        display: none;
+    }
+}
+
+/* Estilos para pantallas extra pequeñas */
+@media only screen and (max-width: 375px) {
+    .container-alura{
+        margin: 4% 0 15%;
+    }
+   .container-texto {
+    height: auto;
+   }
+   .advertencia{
+    margin-bottom: 4%;
+   }
+   .container-botones{
+    height: 100px;
+   }
+   .botones {
+   flex-direction: column;
+   height: auto;
+
+   }
+   .container-derecho {
+    height: 40%;
+    margin-bottom: 8%;
+    margin-top: 0%;
+   }
+   .container-resultado {
+    height: auto;
+   }
+   .texto-null {
+   justify-content: center;
+   height: auto;
+   }
+   #nulll {
+    padding: 5%;
+   }
+   #resultado {
+    gap: 32px;
+   }
+} 
